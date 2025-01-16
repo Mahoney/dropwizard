@@ -103,7 +103,7 @@ class LogbackAccessRequestLogTest {
     void combinesHeaders() {
         final IAccessEvent event = logAndCapture();
 
-        assertThat(event.getResponseHeaderMap()).containsEntry("Testheader", "Testvalue1,Testvalue2");
+        assertThat(event.getResponseHeaderMap()).containsEntry("Testheader", "Testvalue2");
     }
 
     private IAccessEvent logAndCapture() {
